@@ -65,6 +65,27 @@ http://localhost:8080/hello.html
 
 通过这个例子我发现目前这个 demo 是等程序运行完才会在网页端显示，而不是能看到没延时 1s，打印一次 hello world!
 
+
+### 工具
+
+https://github.com/WebAssembly/binaryen
+
+https://github.com/emscripten-core/emscripten
+
+### Demo
+
+- [JSC](https://mbbill.github.io/JSC.js/demo/index.html).js** is a JavaScript engine which can run on top of you browser's JavaScript engine. It's based on the JavaScript engine (JavaScriptCore) of WebKit and compiled to wasm with emscripten. Therefore, if you're using Safari, you are literally running its JavaScript engine on top of itself.
+
+  The size of JSC.wasm is around 4MB (compressed js and mem file).
+
+### 参考链接
+
+emcc 优化代码：https://cunzaizhuyi.github.io/emcscripten-Optimizing-Code/
+
+emcc 命令行参数： https://blog.csdn.net/weixin_34235371/article/details/88962382?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param
+
+JS 调用 C 代码：https://developer.mozilla.org/zh-CN/docs/WebAssembly/C_to_wasm
+
 ## Reference
 
 - [WebAssembly](https://en.wikipedia.org/wiki/WebAssembly)
